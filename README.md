@@ -6,6 +6,8 @@ Or download it by releases section.
 Game supports only Android 12+ since it is done only for Material You devices.
 
 Sample images:
+
+
 <img src="https://user-images.githubusercontent.com/26904790/213246818-a816d263-2945-4a4a-8834-cffc4ecddca9.png" width = "150px"> <img src="https://user-images.githubusercontent.com/26904790/213246820-2173cada-79d1-4a9b-970b-ff2e08d818c5.png" width = "150px">
 <img src="https://user-images.githubusercontent.com/26904790/213246824-11e448fa-ccd9-4c84-b3f2-1b0be6fe7194.png" width = "150px">
 <img src="https://user-images.githubusercontent.com/26904790/213246829-24ac2d32-0486-451d-8e5a-d778f0817bc7.png" width = "150px">
