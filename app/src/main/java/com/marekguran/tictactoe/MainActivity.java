@@ -358,6 +358,244 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+        binding.image1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image3.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image4.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image5.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image6.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image7.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image8.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+        binding.image9.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                if (hasFocus) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+            }
+        });
+
+
     }
     private void performAction(ImageView  imageView, int selectedBoxPosition) {
         boxPositions[selectedBoxPosition] = playerTurn;
