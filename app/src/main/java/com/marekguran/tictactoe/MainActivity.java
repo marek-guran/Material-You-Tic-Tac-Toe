@@ -2,12 +2,15 @@ package com.marekguran.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -110,6 +113,249 @@ public class MainActivity extends AppCompatActivity {
                 if (isBoxSelectable(8)){
                     performAction((ImageView) view, 8);
                 }
+            }
+        });
+        binding.image1.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image3.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image4.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image5.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image6.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image7.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image8.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
+            }
+        });
+        binding.image9.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    ObjectAnimator scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f);
+                    ObjectAnimator scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f);
+                    scaleDownX.setDuration(150);
+                    scaleDownY.setDuration(150);
+
+                    AnimatorSet scaleDown = new AnimatorSet();
+                    scaleDown.play(scaleDownX).with(scaleDownY);
+
+                    scaleDown.start();
+                }
+                return false;
             }
         });
     }
