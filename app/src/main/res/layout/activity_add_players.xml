@@ -42,6 +42,7 @@
                 android:padding="8dp"
                 android:maxLines="1"
                 android:hint="@string/enter_player_one_name"
+                android:maxLength="24"
                 android:drawableLeft="@drawable/player_one"
                 android:drawablePadding="8dp"/>
 
@@ -53,6 +54,7 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:maxLines="1"
+                android:maxLength="24"
                 android:hint="@string/enter_player_two_name"
                 android:drawableLeft="@drawable/player_two"
                 android:drawablePadding="8dp"/>

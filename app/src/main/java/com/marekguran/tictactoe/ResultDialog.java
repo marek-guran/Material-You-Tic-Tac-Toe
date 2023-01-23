@@ -23,6 +23,7 @@ public class ResultDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         setContentView(R.layout.activity_result_dialog);
         TextView messageText = findViewById(R.id.messageText);
         Button startAgainButton = findViewById(R.id.startAgainButton);
