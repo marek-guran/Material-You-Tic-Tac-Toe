@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
+    <uses-feature android:name="android.software.chrome_os" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,8 @@
         android:theme="@style/Theme.MaterialYouTicTacToe"
         tools:targetApi="33"
         android:localeConfig="@xml/locales_config"
-        android:banner="@mipmap/ic_banner">
+        android:banner="@mipmap/ic_banner"
+        android:isGame="true">
         <activity
             android:name=".ResultDialog"
             android:exported="false"/>
