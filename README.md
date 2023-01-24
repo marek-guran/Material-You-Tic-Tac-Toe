@@ -1,6 +1,6 @@
 # Material-You-Tic-Tac-Toe
 
-Once approved, you will be able to download game at: https://play.google.com/store/apps/details?id=com.marekguran.tictactoe
+You can download game at: https://play.google.com/store/apps/details?id=com.marekguran.tictactoe
 
 Or download it by releases section: https://github.com/marek-guran/Material-You-Tic-Tac-Toe/releases
 
