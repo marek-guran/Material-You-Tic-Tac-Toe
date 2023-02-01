@@ -3,7 +3,7 @@
     <string name="app_name">Piškvorky</string>
     <string name="player_one">Hráč Jedna</string>
     <string name="player_two">Hráč Dva</string>
-    <string name="enter_n_players_names">VLOŽTE \n MENÁ HRÁČOV</string>
+    <string name="enter_n_players_names">VLOŽTE\nMENÁ HRÁČOV</string>
     <string name="enter_player_one_name">Vložte meno hráča jedna</string>
     <string name="enter_player_two_name">Vložte meno hráča dva</string>
     <string name="start_game">Spustiť hru</string>
@@ -12,4 +12,6 @@
     <string name="draw">Remíza</string>
     <string name="winner">je Víťaz</string>
     <string name="enter_player_name">Prosím vložte meno hráča</string>
+
+    <string name="enter_n_players_names_landscape">VLOŽTE\n\nMENÁ\n\nHRÁČOV</string>
 </resources>

@@ -23,6 +23,10 @@ public class ResultDialog extends Dialog {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
         getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         setContentView(R.layout.activity_result_dialog);
         TextView messageText = findViewById(R.id.messageText);

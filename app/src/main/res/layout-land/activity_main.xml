@@ -10,23 +10,23 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="1"
+        android:columnCount="2"
         android:rowCount="2"
         tools:context=".MainActivity">
-
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/players"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_height="match_parent"
         app:alignItems="center"
-        app:flexDirection="row"
-        app:justifyContent="center"
+        android:layout_marginEnd="20dp"
         android:layout_gravity="center"
+        app:flexDirection="column"
+        app:justifyContent="center"
         app:flexWrap="wrap">
 
         <androidx.cardview.widget.CardView
@@ -45,16 +45,16 @@
                 android:text="@string/player_one"
                 android:padding="10dp"
                 android:id="@+id/playerOneName"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:maxLines="1"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:src="@drawable/player_one"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center"/>
 
@@ -76,16 +76,16 @@
                 android:text="@string/player_two"
                 android:id="@+id/playerTwoName"
                 android:padding="10dp"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:maxLines="1"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:src="@drawable/player_two"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center"/>
 
@@ -94,67 +94,64 @@
     </com.google.android.flexbox.FlexboxLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/container"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="30dp"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
             android:paddingBottom="5dp"
             android:weightSum="3">
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image1"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:adjustViewBounds="true"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
-                android:padding="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image2"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
-                android:padding="20dp"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image3"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
-                android:padding="20dp"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
 
         </LinearLayout>
@@ -162,55 +159,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal"
             android:paddingBottom="5dp"
-            android:gravity="center"
             android:weightSum="3">
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image4"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
-                android:padding="20dp"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image5"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
-                android:padding="20dp"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image6"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
-                android:padding="20dp"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
 
         </LinearLayout>
@@ -218,54 +215,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
             android:weightSum="3">
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image7"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
                 android:adjustViewBounds="true"
-                android:padding="20dp"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image8"
-                android:adjustViewBounds="true"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
-                android:padding="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
                 android:id="@+id/image9"
-                android:background="@drawable/white_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
-                android:layout_marginStart="10dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="5dp"
-                android:padding="20dp"
                 android:adjustViewBounds="true"
+                android:background="@drawable/white_box"
                 android:clickable="true"
-                android:focusable="true"/>
+                android:elevation="3dp"
+                android:focusable="true"
+                android:padding="20dp" />
 
 
         </LinearLayout>

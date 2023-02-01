@@ -11,7 +11,7 @@
     tools:context=".AddPlayers">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardBackgroundColor="@color/add_players_card"
@@ -25,37 +25,54 @@
             android:layout_gravity="center_horizontal"
             android:padding="24dp">
 
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="3"
+                android:layout_gravity="center"
+                tools:context=".MainActivity">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/enter_n_players_names"
+                android:text="@string/enter_n_players_names_landscape"
                 android:textAlignment="center"
-                android:textSize="36sp"
+                android:textSize="60sp"
+                android:layout_rowSpan="3"
+                android:layout_gravity="center"
+                android:layout_marginEnd="50dp"
                 android:textStyle="bold"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:id="@+id/playerOne"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
                 android:maxLines="1"
                 android:hint="@string/enter_player_one_name"
+                android:textSize="40sp"
                 android:maxLength="24"
+                android:layout_row="0"
+                android:layout_column="1"
                 android:drawableLeft="@drawable/player_one"
                 android:drawablePadding="8dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="80dp"
                 android:id="@+id/playerTwo"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:maxLines="1"
                 android:maxLength="24"
+                android:layout_row="1"
+                android:layout_column="1"
                 android:hint="@string/enter_player_two_name"
+                android:textSize="40sp"
                 android:drawableLeft="@drawable/player_two"
                 android:drawablePadding="8dp"/>
 
@@ -65,9 +82,14 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/startGameButton"
                 android:text="@string/start_game"
-                android:textSize="18sp"
+                android:textSize="40sp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center"
                 android:backgroundTint="@color/buttons"
                 app:cornerRadius = "20dp"/>
+
+            </GridLayout>
 
         </LinearLayout>
 

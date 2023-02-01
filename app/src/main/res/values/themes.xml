@@ -15,5 +15,6 @@
         <item name="android:windowLightStatusBar">
             true
         </item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

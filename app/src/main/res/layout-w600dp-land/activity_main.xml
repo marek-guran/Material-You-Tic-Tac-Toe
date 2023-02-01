@@ -13,14 +13,14 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="1"
+        android:columnCount="2"
         android:rowCount="2"
         tools:context=".MainActivity">
 
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/players"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:alignItems="center"
@@ -33,7 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/playerOneLayout"
-            android:layout_margin="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
             android:orientation="vertical"
             android:gravity="center"
             app:cardCornerRadius="20dp"
@@ -45,16 +46,16 @@
                 android:text="@string/player_one"
                 android:padding="10dp"
                 android:id="@+id/playerOneName"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:maxLines="1"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/player_one"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center"/>
 
@@ -76,16 +77,16 @@
                 android:text="@string/player_two"
                 android:id="@+id/playerTwoName"
                 android:padding="10dp"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:maxLines="1"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/player_two"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center"/>
 
@@ -94,13 +95,9 @@
     </com.google.android.flexbox.FlexboxLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/container"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="30dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -112,11 +109,10 @@
             android:weightSum="3">
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image1"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:adjustViewBounds="true"
@@ -127,11 +123,10 @@
                 android:focusable="true"/>
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image2"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -142,11 +137,10 @@
                 android:focusable="true"/>
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image3"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -168,11 +162,10 @@
             android:weightSum="3">
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image4"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -183,11 +176,10 @@
                 android:focusable="true"/>
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image5"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -198,11 +190,10 @@
                 android:focusable="true"/>
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image6"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -223,11 +214,10 @@
             android:weightSum="3">
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image7"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -238,12 +228,11 @@
                 android:focusable="true"/>
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image8"
                 android:adjustViewBounds="true"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
@@ -253,11 +242,10 @@
                 android:focusable="true"/>
 
             <ImageView
-                android:layout_width="115dp"
-                android:layout_height="115dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/image9"
                 android:background="@drawable/white_box"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginStart="10dp"
                 android:elevation="3dp"
